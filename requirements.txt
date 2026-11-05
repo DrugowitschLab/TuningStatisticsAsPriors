@@ -1,0 +1,8 @@
+# Below is the minimal set of packages for reproducing results
+
+numpy == 1.26.4
+scipy == 1.13.1
+scikit-learn == 1.6.1
+matplotlib == 3.9.2
+tqdm == 4.66.5
+

@@ -13,5 +13,12 @@ It is assumed that the user has standard scientific computing libraries (`numpy`
 ---
 All source code files are self-contained and can be run independently. Each one contains a main entry point routine that runs the respective experiment.
 
-`figs/fig_gen.py` generates all panels for the main and supplementary text figures. As noted in that script, this code only generates panels for each figure. Final formatting in Illustrator was used to generate the figures that appear in the camera-ready version of the manuscript. The script permits generation of all figure panels at once, or for select generation of particular figures' panels. Please refer to the output of `./fig_gen.py -h` for instructions on how to generate specific figure
+`figs/fig_gen.py` generates all panels for the main and supplementary text figures. As noted in that script, this code only generates panels for each figure. Final formatting in Illustrator was used to generate the figures that appear in the camera-ready version of the manuscript. The script permits generation of all figure panels at once, or for select generation of particular figures' panels.
+
+Some sample usages:
+- `./fig_gen.py`: produces all figure panels
+- `./fig_gen.py -f m1+s1`: produces main text figure 1 and supplementary figure 1 panels
+- `./fig_gen.py -f m1-3+s1-3`: produces main text figure 1-3 and supplementary figure 1-3 panels
+
+Please refer to the output of `./fig_gen.py -h` for full instructions on how to generate specific figure
 panels.
