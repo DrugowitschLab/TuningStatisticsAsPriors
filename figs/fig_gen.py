@@ -501,7 +501,7 @@ def _plot_error_and_lambda(save_dir,
     for i, p in enumerate(res['ds']):
         if adaptive_noise:
             student['obs_noise'] = res['nvs'][i]
-            fixed_student['obs_noise'] = res['nvs'][i]
+            fixed_student['obs_noise'] = res['nvs'][0]
 
         s_lamb = lambs[np.argmax(lik[:, i])]
         student['kernel'] = (1 - s_lamb) * student['rbf'] + \
