@@ -522,6 +522,7 @@ def _plot_error_and_lambda(save_dir,
     if be is not None:
         ax[1].plot(res['ds'], be, color=colors[-2], linestyle='--')
 
+    ax[1].set(xlabel=r"dataset size, $P$", ylabel=r'$\varepsilon_g(P)$')
     rel = 'under' if sigma_s < sigma_t else 'over' if sigma_s > sigma_t else 'matched'
     fname = f"/reward_experiment_with_theory_{'an' if adaptive_noise else 'fn'}_{rel}.pdf"
     fig.savefig(
@@ -629,6 +630,7 @@ def make_fig_2s(save_dir):
     ax[3].plot(emp_kern[0], label='empirical', color='pink')
     ax[3].plot(ana_kern[0], label='theory', linestyle='--', color='grey')
     ax[3].legend(frameon=False)
+    ax[3].set(xlabel=r"distance, $|x - x'|$", ylabel=r"$K(|x-x'|)$")
 
     fig.savefig(
         str(save_dir) + "/weighted_mixture_kernel.pdf",
