@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23984836.svg)](https://doi.org/10.5281/zenodo.23984836)
+
 # Neural population tuning statistics as priors for multitask generalization
 
 This repo contains the source and figure generation code for Cohen & Drugowitsch, "Neural population tuning statistics as priors for multitask generalization". NeurIPS 2026. 
