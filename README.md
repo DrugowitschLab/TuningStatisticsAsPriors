@@ -6,8 +6,8 @@ It is assumed that the user has standard scientific computing libraries (`numpy`
 
 ### File structure
 ---
-`src` - source files for all simulations
-`figs` - figure generation code (`fig_gen.py` in particular)
+- `src`: source files for all simulations
+- `figs`: figure generation code (`fig_gen.py` in particular)
 
 ### High-level structure
 ---
